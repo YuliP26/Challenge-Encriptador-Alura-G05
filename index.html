@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto Alura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-16x16.png">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://app.aluracursos.com/user/yuli-tique26" target="_blank" ><img src="img/Logo.png" alt="logoAlura"></a>
+        </div>
+    </header>
+    <div class="contenedor">
+     
+        <div class="entrada">
+            <div class="texto">
+                <textarea name="iTexto" id="iTexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="warning">
+                <img src="img/Warning.png" alt="Advertencia" >
+                <p>Solo letras minusculas y sin acento</p>
+            </div>
+            <div class="botones">
+                <button type="button" id="btnEncriptar" onclick="encriptarTexto()" href="#oTexto">Encriptar</button>
+                <button type="button" id="btnDesencriptar" onclick="desencriptarTexto()" href="#oTexto">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="salida">
+            <div id="divMostrarImagen" class="mostrar-imagen">
+                <img src="img/Muñeco.png" alt="Ningún mensaje fue encontrado">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div id="divMostrarTexto" class="mostrar-texto">
+                <textarea name="oTexto" id="oTexto" cols="30" rows="10" readonly></textarea>
+                <div class="boton">
+                    <button type="button" id="btnCopiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <div class="container">
+        <p>&copy; Yuli Tique - Colombia - 2023 </p>
+    </div>
+</footer>
+
+</html>
